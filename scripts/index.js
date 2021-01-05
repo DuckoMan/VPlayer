@@ -10,9 +10,8 @@ const deactivationPlayer=()=>{
     temp.style.display = "none"; //удаляет надпись "Медиа портал VPlayer"
     playerBtn.forEach((item)=>{item.classList.remove("active")}); //Деактивируется блок навигации в хэдере
     playerBlock.forEach((item)=>{item.classList.remove("active")});//Деактивируется блок с видео e.t.c. в body
+    
 }
-
-
 
 playerBtn.forEach((btn , i) => { //отслежтвает нажатие на любую кнопку навигации,активирует кнопку переключает табы см.функцию deactivationPlayer
     btn.addEventListener("click", ()=>{
@@ -22,8 +21,7 @@ playerBtn.forEach((btn , i) => { //отслежтвает нажатие на л
     });
 });
 
-
-//Взов всех фунцкий из подключенных js-модулей
+//Вызов всех фунцкий из подключенных js-модулей
 videoPlayerInit();
 radioPlayerInit();
 musicPlayerInit();

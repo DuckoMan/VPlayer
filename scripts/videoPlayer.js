@@ -1,3 +1,4 @@
+import {AddZeroToTimer} from "./supScript.js"
 //General exporting function
 export const videoPlayerInit =()=>{
 
@@ -30,8 +31,6 @@ export const videoPlayerInit =()=>{
         videoPlayer.pause();
         videoPlayer.currentTime = 0;
     }
-    const AddZeroToTimer = n => n <10 ? "0"+ n : n; //Добавляем "0" в занчение таймера для красоты(Если занчение таймера <10 ,то добавляем вначало "0", если > или =,возвараем обычное значние)
-
 //Tracking
     videoPlayer.addEventListener("click", togglePlay); //Найстройка вкл/выкла плеера ,при нажатии на сам плеер
     vidoButtonPlay.addEventListener("click", togglePlay);
