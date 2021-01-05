@@ -13,6 +13,7 @@ const deactivationPlayer=()=>{
 }
 
 
+
 playerBtn.forEach((btn , i) => { //отслежтвает нажатие на любую кнопку навигации,активирует кнопку переключает табы см.функцию deactivationPlayer
     btn.addEventListener("click", ()=>{
         deactivationPlayer();
